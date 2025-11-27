@@ -267,3 +267,52 @@ img{
 .home-social-link:hover {
     color: var(--first-color);
 }
+
+
+
+.about-container {
+    grid-template-columns: 3fr 6fr 2fr;
+    align-items: center;
+    column-gap: 3rem;
+}
+
+.about-expierence {
+    width: 280px;
+    height: 280px;
+    display: flex;
+
+    background: var(--second-gradient);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    justify-content: center;
+    display : grid;
+    place-content : center;
+}
+
+.about-number,.about-title {
+    color: var(--white-color);
+
+}
+
+.about-number {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-bold);
+    margin-bottom: 0.25rem;
+}
+
+.about-title {
+    font-size: var(--large-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.about-description {
+    margin-bottom: 2rem;
+    color: var(--text-color);
+    align-items: center;
+    justify-content: center;
+}
+
+
+

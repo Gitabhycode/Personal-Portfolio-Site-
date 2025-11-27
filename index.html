@@ -1,72 +1,107 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-      rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"
     />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Personal Portfolio</title>
+</head>
+<body>
+
+<header class="header">
+    <nav class="nav">
+        <a href="#" class="nav-logo">Abhay</a>
+
+        <div class="nav-menu">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-close" id="nav-close">
+                <i class="ri-close-line"></i>
+            </div>
+        </div>
+
+        <!-- <div class="nav-btns"> -->
+            <i class="ri-sun-line change-theme" id="theme-button"></i>
+
+            <!-- <div class="nav-toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div> -->
+        </div>
+    </nav>
+</header>
+
+<main class="main">
+    <section class="home section" id="home">
+        <div class="home-container container grid">
+            <div class="home-content">
+                <h1 class="home-title">Abhay Patkar</h1>
+                <p class="home-subtitle">Full Stack Developer</p>
+                <p class="home-description">A full stack developer builds and maintains entire web applications, handling both the front-end what the user sees and interacts with and the back-end the server, application logic, and database</p>
+           
+                <a href="#" class="button">MY WORK</a>
+
+                <div class="home-social home-social-grid">
+                    <a href="#" target="_blank" class="home-social-link">
+                      <i class="ri-github-fill"></i>
+                    </a>
+
+                    <a href="#" target="_blank" class="home-social-link">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="home-image-wrapper">
+                <img src="assets/img/Pesonalpic.png" alt="Abhay" class="home-image">
+            </div>
+        </div>
+    </section>
 
 
-    <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <title>Abhay</title>
-  </head>
-  <body>
-   
-    <header class="header" id="header"></header>
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-expierence">
+                <span class="about">1+</span>
+                <h1 class="about-title"> Experience</h1>
+            </div>
+        </div>
 
-  
-    <main class="main">
-     
-      <section class="home section" id="home"></section>
 
-      <!--=============== ABOUT ===============-->
-      <section class="about section" id="about"></section>
+        <div>
+            <h2 class="about-description">
+                Over <span class="text-gradient">expierence in my own project that i make and i want a internship  </span>
+                <span class="text-gradient">creativity</span>and <br>
+                 <span class="text-gradient">dedication</span> to deliver high-quality results.
 
-      <!--=============== SERVICES ===============-->
-      <section class="services section" id="services"></section>
+            </h2>
 
-      <!--=============== SKILLS ===============-->
-      <section class="skills section" id="skills"></section>
+            <a href="assets/pdf/abhay-cv.pdf" download ="" class="button">Downaload Resumne</a>
+        </div>
 
-      <!--=============== RESUME ===============-->
-      <section class="resume section"></section>
+    
+    </section>
 
-      <!--=============== PORTFOLIO ===============-->
-      <section class="work section" id="works"></section>
 
-      <!--=============== CONTACT ===============-->
-      <section class="contact section" id="contact"></section>
-    </main>
+<script src="assets/js/main.js"></script>
 
-    <!--=============== FOOTER ===============-->
-    <footer class="footer"></footer>
-
-    <!--=============== GSAP ===============-->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-
-    <!--=============== COUNT-UP ===============-->
-    <script
-      type="module"
-      src="https://cdn.jsdelivr.net/gh/lekoala/formidable-elements@master/dist/count-up.min.js"
-    ></script>
-
-    <!--=============== MIXITUP ===============-->
-    <script src="assets/js/mixitup.min.js"></script>
-
-    <!--=============== EMAIL JS ===============-->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-
-    <!--=============== SCROLL REVEAL ===============-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
-  </body>
+</body>
 </html>
