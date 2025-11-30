@@ -271,48 +271,58 @@ img{
 
 
 .about-container {
+    display: grid;
     grid-template-columns: 3fr 6fr 2fr;
     align-items: center;
     column-gap: 3rem;
+    margin-left: 2rem;
 }
 
 .about-expierence {
     width: 280px;
-    height: 280px;
-    display: flex;
-
+    height: 420px;
     background: var(--second-gradient);
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    text-align: center;
-    margin-bottom: 2rem;
+    border-radius: 1rem;
     justify-content: center;
     display : grid;
     place-content : center;
 }
 
-.about-number,.about-title {
+.about-no,.about-title {
     color: var(--white-color);
 
 }
 
-.about-number {
-    font-size: var(--h2-font-size);
+.about-no{
+    font-size: 7.5rem;
     font-weight: var(--font-bold);
+    line-height:1;
     margin-bottom: 0.25rem;
 }
 
 .about-title {
     font-size: var(--large-font-size);
-    font-weight: var(--font-semi-bold);
+    text-align: center;
 }
 
 .about-description {
+    font-size: var(--h2-font-size,--font-semi-bold);
     margin-bottom: 2rem;
-    color: var(--text-color);
-    align-items: center;
-    justify-content: center;
+   
 }
+
+a.button{
+    margin-bottom: 1rem;
+}
+
+.text-gradient {
+    -webkit-text-fill-color: hsl(var(--second-hue), 8%, 85% ,0.2);
+    background-color: var(--first-gradient);
+    background-clip: text;
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+}
+
 
 
 
