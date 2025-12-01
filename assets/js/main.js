@@ -8,11 +8,11 @@ gsap.utils.toArray('.text-gradient').forEach((span)=>{
         backgroundSize:'100% 100%',
         ease : 'none',
         scrollTrigger:{
-            trigger:'.about-description',
-            start:'top bottom',
-            end:'bottom top',
+            trigger:'.about-section',
+            start:'top 80%',
+            end:'bottom 20%',
             scrub:true,
-            // markers:true,
+        // Uncommented for debugging
         }
     });
 });
