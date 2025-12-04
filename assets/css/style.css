@@ -335,9 +335,9 @@ a.button{
     
  }
 
-article.service-card{
+.service-card{
     background: var(--container-color);
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 1rem;
     transition: 0.3s;
  }
@@ -354,14 +354,27 @@ article.service-card{
 
 }
 
+
+
 .service-title{
     font-size: var(--h3-font-size);
-    margin-block: 1.25rem 0.75rem;
+    margin-block: 1.25rem 
 
+}
+
+.h2,.service-title{
+    justify-content: center;
+    align-items: center;
 }
 
 .service-description{
 font-size: var(--large-font-size);
 
 }
+
+
+.service-card:hover :is(.service-no,.service-title,.service-description){
+    color: var(--white-color);
+}
+
 
