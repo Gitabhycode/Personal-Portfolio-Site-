@@ -379,6 +379,7 @@ font-size: var(--large-font-size);
 
 .skill-container{
     grid-template-columns: repeat(2,max-content);
+    display: flex;
     justify-content: center;
     gap: 10rem;
 }
@@ -390,14 +391,15 @@ font-size: var(--large-font-size);
 }
 
 
-.skill-item{
-    grid-template-columns: repeat(3,1fr);
-    gap: 4rem;
+.skills-items{
+ grid-template-columns: repeat(3,1fr);
+ gap: 4rem;
 
 }
 
+
 .skill-data{
-    text-align: center;
+    text-align: center ;
 }
 
 .skill-blob{
@@ -406,22 +408,19 @@ font-size: var(--large-font-size);
     background-color: var(--container-color);
     border-radius: 3rem;
     display: grid;
-    place-items:center;
-    margin-inline:auto;
-}
+    place-items: center;
 
+}
 .skill-img{
-    width :50px;
+    width: 40px;
+}
+.skills-name{
+    font-size: var(--normal-font-size);
 }
 
-
-.skill-name{
-    margin-top: 1rem 0.25rem;
-    font-size: var(--large-font-size);
-}
-
-.skill-level{
+.skills-level
+{
     font-size: var(--small-font-size);
     color: var(--text-color);
-    margin-top: 0.25rem;
+    margin-top: 0.5rem;
 }

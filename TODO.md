@@ -1,0 +1,4 @@
+- [x] Redefine root variables to use black, sky blue, light blue, etc.
+- [x] Change body background to a unique gradient from black to sky blue.
+- [x] Change nav bar text color to light blue.
+- [x] Adjust gradients to use sky blue.
