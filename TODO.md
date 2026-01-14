@@ -1,4 +1,4 @@
-- [x] Redefine root variables to use black, sky blue, light blue, etc.
-- [x] Change body background to a unique gradient from black to sky blue.
-- [x] Change nav bar text color to light blue.
-- [x] Adjust gradients to use sky blue.
+# TODO for Making Skills Section Interactive
+
+- [x] Update index.html: Replace FontAwesome icons with SVG images from assets/img/
+- [x] Update assets/css/style.css: Change skills section to dark theme, add hover effects (scale, shadow, color change)
