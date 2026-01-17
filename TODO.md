@@ -1,11 +1,10 @@
-# Resume Section Restructuring Tasks
+# TODO: Portfolio Work Section Updates
 
-## Completed Tasks
-- [x] Restructured HTML in index.html for resume section with alternating left-right timeline layout
--  Updated CSS in style.css to support the new timeline design with alternating positions
--  Added proper classes and structure for resume items (University, Apple, Full Stack Developer)
--  Implemented vertical timeline line and circular markers for each resume item
--  Ensured alternating layout: odd items (left details, right description), even items (right details, left description)
 
-## Summary
-The resume section has been successfully restructured to display a clean, alternating left-right timeline layout. Each resume item now alternates sides, with a central vertical line connecting them, creating a professional and visually appealing presentation of the user's journey.
+-  Fix ul list positioning in style.css (.work-list: change to flex, center, gap, fix typo)
+-  Add CSS for .work-container-grid to display 3 projects inline (grid with 3 columns)
+-  Add CSS styles for new buttons (.view-live and .github-link)
+-  Update index.html: Add "View Live" and "GitHub" buttons to each work-card
+-  Adjust Major Project 2 structure to match Sample Project 1 (add container div, fix class names, correct spelling)
+-  Add filtering functionality with JavaScript
+-  Test layout in browser for proper alignment and responsiveness
