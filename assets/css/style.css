@@ -54,6 +54,7 @@ textarea{
 body{
     background-color: var(--body-color);
     color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1,h2,h3{
@@ -86,6 +87,99 @@ img{
     height: auto;
     display: block;
 }
+
+.light-theme{
+    --title-color: hsl(var(--second-hue), 8%, 16%);
+    --text-color: hsl(var(--second-hue), 8%, 28%);
+    --body-color: hsl(var(--second-hue), 8% ,99%);
+    --container-color: hsl(var(--second-hue), 8%, 95%);
+
+
+    --first-gradient: linear-gradient(
+        150deg,
+        var(--first-color-dark) 0%,
+        var(--first-color) 100%
+    );
+}
+
+
+.light-theme .scroll-header{
+    background-color: var(--body-color);
+    box-shadow: 0 4px 4px hsla(var(--first-hue), 0%, 4%, 0.2);
+}
+
+
+
+.light-theme .text-gradient {
+    -webkit-text-fill-color: hsla(var(--second-hue), 92%, 15%, 0.2);
+}
+
+.light-theme .nav {
+    background-color: var(--body-color);
+    box-shadow: 0 4px 4px hsla(var(--first-hue), 0%, 4%, 0.2);
+}
+
+.light-theme .change-theme {
+    color: var(--title-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+/* Light theme overrides for contact section */
+.light-theme .contact-container h2 {
+    color: var(--title-color);
+}
+
+.light-theme .contact-container p {
+    color: var(--text-color);
+}
+
+.light-theme .contact-form input,
+.light-theme .contact-form textarea {
+    color: var(--text-color);
+    border-color: var(--container-color);
+}
+
+.light-theme .contact-form label {
+    color: var(--text-color);
+}
+
+.light-theme .contact-form button {
+    background: var(--first-color);
+    color: var(--white-color);
+}
+
+.light-theme .contact-form button:hover {
+    background: var(--first-color-dark);
+}
+
+/* Light theme overrides for footer */
+.light-theme .footer {
+    background-color: var(--container-color);
+    color: var(--text-color);
+}
+
+.light-theme .footer-brand h2 {
+    color: var(--title-color);
+}
+
+.light-theme .footer-brand p {
+    color: var(--text-color);
+}
+
+.light-theme .footer-links a {
+    color: var(--text-color);
+}
+
+.light-theme .footer-social a {
+    color: var(--text-color);
+}
+
+.light-theme .footer-bottom p {
+    color: var(--text-color);
+}
+
 
 .nav{
     max-width: 1320px;
@@ -170,6 +264,12 @@ img{
 .change-theme{
     font-size: 1.25rem;
     margin-left: 1rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.change-theme:hover {
+    color: var(--first-color);
 }
 
 .nav-btn{
@@ -187,6 +287,15 @@ img{
     margin: 0 auto;
     padding-inline: 1.25rem;
 }
+
+
+.scroll-header{
+    background-color: var(--body-color);
+    box-shadow: 0 4px 4px hsla(var(--first-hue), 0%, 4%, 0.2);
+
+}
+
+
 
 .home-container {
     grid-template-columns: 1fr repeat(2, max-content);
@@ -305,7 +414,7 @@ img{
 }
 
 .about-description {
-    font-size: var(--h2-font-size,--font-semi-bold);
+    font-size: var(--large-font-size);
     margin-bottom: 2rem;
    
 }
@@ -383,7 +492,7 @@ font-size: var(--large-font-size);
 .skills-title {
   font-size: var(--h2-font-size);
   margin-bottom: 3rem;
-  color: white ;
+  color: var(--title-color);
 }
 
 .skills-container {
@@ -438,7 +547,7 @@ font-size: var(--large-font-size);
 .section-title {
     font-size: var(--h2-font-size);
     margin-bottom: 3rem;
-    color: white;
+    color: var(--title-color);
 }
 
 .resume-container {
@@ -543,7 +652,7 @@ font-size: var(--large-font-size);
   text-align: center;
   font-size: 32px;
   margin-bottom: 50px;
-  color: white ;
+  color: var(--title-color);
 }
 
 .work-list {
@@ -659,14 +768,14 @@ font-size: var(--large-font-size);
 
 }
 
-.contact-container h2 {
-  color: #e5e7eb;
+.contact-conatiner-h2 {
+  color: var(--title-color);
   margin-bottom: 10px;
   font-size: var(--larger-font-size);
 }
 
 .contact-container p {
-  color: #9ca3af;
+  color: var(--text-color);
   font-size: 14px;
   margin-bottom: 25px;
 }
@@ -681,10 +790,10 @@ font-size: var(--large-font-size);
   width: 100%;
   padding: 12px;
   background: transparent;
-  border: 1px solid #334155;
+  border: 1px solid var(--container-color);
   border-radius: 8px;
   outline: none;
-  color: #e5e7eb;
+  color: var(--text-color);
   font-size: 14px;
 }
 
@@ -692,7 +801,7 @@ font-size: var(--large-font-size);
   position: absolute;
   top: 50%;
   left: 12px;
-  color: #94a3b8;
+  color: var(--text-color);
   font-size: 13px;
   transform: translateY(-50%);
   pointer-events: none;
@@ -706,7 +815,7 @@ font-size: var(--large-font-size);
 .contact-form textarea:valid + label {
   top: -8px;
   font-size: 11px;
-  color: #38bdf8;
+  color: var(--first-color);
 }
 
 .contact-form button {
@@ -714,18 +823,18 @@ font-size: var(--large-font-size);
   padding: 12px;
   border: none;
   border-radius: 8px;
-  background: #38067281;
-  color: #e5e7eb;
+  background: var(--first-color);
+  color: var(--white-color);
   transition: 0.5s ease;
 }
 .contact-form button:hover {
-  background: #f8fc00;
-  
+  background: var(--first-color-dark);
+
 }
 
 .footer {
-  background-color: #0f172a;
-  color: #e5e7eb;
+  background-color: var(--body-color);
+  color: var(--text-color);
   padding: 40px 20px;
   text-align: center;
 }
@@ -738,11 +847,12 @@ font-size: var(--large-font-size);
 .footer-brand h2 {
   font-size: 22px;
   margin-bottom: 8px;
+  color: var(--title-color);
 }
 
 .footer-brand p {
   font-size: 14px;
-  color: #94a3b8;
+  color: var(--text-color);
 }
 
 /* Links */
@@ -756,14 +866,14 @@ font-size: var(--large-font-size);
 }
 
 .footer-links a {
-  color: #e5e7eb;
+  color: var(--text-color);
   text-decoration: none;
   font-size: 14px;
   transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-  color: #38bdf8;
+  color: var(--first-color);
 }
 
 /* Social */
@@ -777,17 +887,17 @@ font-size: var(--large-font-size);
 .footer-social a {
   font-size: 20px;
   text-decoration: none;
-  color: #e5e7eb;
+  color: var(--text-color);
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .footer-social a:hover {
   transform: translateY(-3px);
-  color: #38bdf8;
+  color: var(--first-color);
 }
 
 /* Bottom */
 .footer-bottom p {
   font-size: 13px;
-  color: #64748b;
+  color: var(--text-color);
 }
