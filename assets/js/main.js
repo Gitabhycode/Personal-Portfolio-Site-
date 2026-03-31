@@ -18,11 +18,10 @@ gsap.utils.toArray('.text-gradient').forEach((span)=>{
 //change background of header
 
 const scrollHeader = ()=>{
-    const header = document.getElementById('header');
+    const header = document.querySelector('.header');
 
-    this.scrollY >= 20 ? header.classList.add('scroll-header')
+    window.scrollY >= 20 ? header.classList.add('scroll-header')
                           : header.classList.remove('scroll-header')
-
 }
 window.addEventListener('scroll', scrollHeader);
 
@@ -42,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
             themeToggle.classList.add('ri-moon-line');
         }
         localStorage.setItem('theme', theme);
+        console.log('Theme changed to:', theme);
     }
 
     // Load saved theme or default to dark
